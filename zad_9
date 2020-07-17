@@ -3,14 +3,15 @@ import math
 a = float(input("a = "))
 b = float(input("b = "))
 c = float(input("c = "))
-D = math.sqrt(b ** 2) - (4 * a * c)
+D = b ** 2 - 4 * a * c
 if D == 0:
-    x1 = (-b) / 2 * a
+    x1 = (-b) / (2 * a)
+    print(x1)
 elif D > 0:
-    x1 = (-b - D) / 2 * a
-    x2 = (-b + D) / 2 * a
+    x1 = (-b - math.sqrt(D)) / (2 * a)
+    x2 = (-b + math.sqrt(D)) / (2 * a)
+    print(x1, x2)
 else:
     print("нет действительных корней")
 
-print(x1, x2, D)
-#я забыла почему d не работает(((
+
