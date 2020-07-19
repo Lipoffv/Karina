@@ -1,10 +1,12 @@
-# TODO Разобраться с условным оператором.
+# Разобраться с условным оператором.
 
 x = int(input("x = "))
 y = int(input("y = "))
 z = int(input("z = "))
 if x != y != z:  # Если хотя бы два числа одинаковые, то Max и Min не считаюстся. Почему?
-    if x > y and x > z:
+    if x == y == z:
+        print("введите другие числа")
+    elif x > y and x > z:
         max = x
     elif y > x and y > z:
         max = y
