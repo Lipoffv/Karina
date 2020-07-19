@@ -1,14 +1,15 @@
 # TODO Сделать проверку что сумма a + b >= 0. Исправить условный оператор.
 
 import math
+
 a = int(input("a = "))
 b = int(input("b = "))
-if a != b:
-    c = ((max(a, b))/(a - b))  # Можно заменить на <c = max(a, b) / (a - b)>
-    y = c + (math.sqrt(a+b))  # Можно заменить на <y = c + math.sqrt(a+b)>
+if a != b and a + b > 0:
+    c = (max(a, b)) / (a - b)  # Можно заменить на <c = max(a, b) / (a - b)>
+    y = c + math.sqrt(a + b)  # Можно заменить на <y = c + math.sqrt(a+b)>
     print(y)
-elif a + b == 0:
-    print(c)
+elif a + b < 0:
+    print("введите другие значения")
 else:
     print("Введите другие значения!")
 
