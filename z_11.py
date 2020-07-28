@@ -10,7 +10,6 @@ while True:
     sum = sum + num
     if num == 0:
         break
-    else:
-        sum = sum + num
 
 print(sum)
+
