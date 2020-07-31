@@ -6,15 +6,15 @@ if x == y == z:
     print("Все числа одинаковые! Введите другие числа.")
 else:
     if x > y and x > z:
-        max = x
+        Max = x
     elif y > x and y > z:
-        max = y
+        Max = y
     else:
-        max = z
+        Max = z
     if x < y and x < z:
-        min = x
+        Min = x
     elif y < x and y < z:
-        min = y
+        Min = y
     else:
-        min = z
-    print("Максимальное значение — ", max, ". Минимальное значение — ", min, '.', sep='')
+        Min = z
+    print("Максимальное значение — ", Max, ". Минимальное значение — ", Min, '.', sep='')
