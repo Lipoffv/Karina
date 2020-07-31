@@ -6,10 +6,15 @@
 sum = 0
 
 while True:
-    num = int(input())
+    num = int(input())  # Как пользователь поймёт, что ему вводить?
     sum = sum + num
     if num == 0:
         break
 
 print(sum)
 
+"""
+Ого! Работает, хотя я бы оставил прибавление числа в <else>.
+"""
+
+# ✅
